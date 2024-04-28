@@ -1,0 +1,141 @@
+.purchaseViewRoot {
+  border-radius: 13px;
+
+  & > p {
+    font-size: 22px;
+
+    @apply tw-text-default
+    tw-font-bold;
+  }
+
+  & label {
+    @apply xs:tw-text-md
+    tw-text-sm
+    tw-font-bold
+    tw-block
+    xs:tw-mb-[15px]
+    tw-mb-[8px];
+  }
+
+  @apply tw-bg-white
+  tw-flex
+  tw-flex-col
+  xs:tw-gap-[30px]
+  tw-w-full
+  tw-gap-[16px]
+  tw-p-[16px]
+  xs:tw-min-w-[700px]
+  xs:tw-max-w-[740px]
+  xs:tw-p-[30px]
+  tw-border-2
+  tw-border-primary;
+}
+
+.resultRow {
+  & > * {
+    width: 100%;
+  }
+
+  @apply tw-flex
+  tw-gap-[15px]
+  tw-flex-col
+  2xs:tw-flex-row;
+}
+
+.usdtAmountRow {
+  & > * {
+    &:first-child {
+      @apply tw-mb-[15px]
+      xs:tw-m-0;
+    }
+
+    @apply xs:tw-w-[50%]
+    tw-w-full;
+  }
+
+  & > :not(:first-child) {
+    & > * {
+      @apply tw-w-full;
+    }
+
+    &::after {
+      content: "Price based on phase discount value";
+      @apply tw-absolute
+      tw-translate-y-8
+      tw-translate-x-6
+      tw-text-sm;
+    }
+
+    &::before {
+      content: "";
+      @apply tw-w-2
+      tw-h-2
+      tw-absolute
+      tw-translate-y-6
+      tw-translate-x-2
+      tw-bg-primary
+      tw-rounded-[50%];
+    }
+
+    @apply tw-flex
+    2xs:tw-gap-[15px]
+    tw-gap-[12px]
+    tw-items-end;
+  }
+
+  @apply xs:tw-flex
+  2xs:tw-gap-[15px]
+  tw-gap-[12px]
+  tw-items-end
+  tw-block
+  xs:tw-mb-0
+  tw-mb-8;
+}
+
+label.smallLabel {
+  @apply tw-text-sm
+  tw-font-regular;
+}
+
+.tabButton {
+  & p {
+    width: 50%;
+
+    @apply tw-text-center
+    tw-bg-primary
+    tw-rounded-[8px]
+    xs:tw-p-[7px]
+    tw-p-[4px];
+  }
+
+  @apply xs:tw-text-base
+  tw-font-bold
+  tw-border-[1px]
+  tw-border-[#F5F3F3]
+  tw-rounded-[8px]
+  tw-text-sm;
+}
+
+.hdpToUsdt {
+  @apply tw-bg-teal-gradient
+  xs:tw-text-2xl
+  tw-font-bold
+  tw-rounded-[13px]
+  xs:tw-px-[30px]
+  xs:tw-py-[20px]
+  tw-text-md
+  tw-px-[16px]
+  tw-py-[12px];
+}
+
+.totalSum {
+  @apply tw-bg-teal-gradient
+  xs:tw-text-4xl
+  tw-font-bold
+  tw-rounded-[13px]
+  xs:tw-px-[30px]
+  xs:tw-py-[16px]
+  tw-text-md
+  tw-px-[16px]
+  tw-py-[12px];
+}

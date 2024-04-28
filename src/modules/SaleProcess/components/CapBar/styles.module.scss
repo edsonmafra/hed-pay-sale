@@ -1,0 +1,100 @@
+.capBarRoot {
+  & > p {
+    -webkit-text-stroke: 1px white;
+    
+    @apply
+    md:tw-text-4xl
+    sm:tw-text-3xl
+    tw-text-xl
+    tw-text-primary
+    tw-font-bold
+    tw-text-center
+    tw-mb-2
+  }
+
+  @apply
+  tw-w-full
+}
+
+.capBar {
+  & > div {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &::after {
+      content: '';
+      height: 15px;
+      left: 50%;
+      position: absolute;
+      width: 1px;
+      
+      @apply
+      tw-bg-[#54595F]
+      xs:tw-top-[-60%]
+      tw-top-[-80%]
+    }
+
+    & > span {
+      @apply
+      2xs:tw-block
+      tw-hidden
+    }
+
+    @apply
+    tw-absolute
+    tw-top-full
+    tw-translate-x-[-50%]
+    xs:tw-translate-y-[12px]
+    tw-translate-y-[10px]
+    tw-text-[#54595F]
+    lg:tw-text-base
+    xs:tw-text-sm
+    tw-text-xxs
+    tw-flex
+    tw-gap-[4px]
+  }
+
+  & > div:first-child {
+    @apply
+    tw-left-[17%]
+  }
+
+  & > div:nth-child(2) {
+    @apply
+    tw-left-[42%]
+  }
+
+  & > div:nth-child(3) {
+    @apply
+    tw-left-[67%]
+  }
+
+  & > div:last-child {
+    @apply
+    tw-left-[92%]
+  }
+
+  &::before {
+    content: '';
+    height: calc(100% - 4px);
+    position: absolute;
+    width: var(--pseudo-before-width);
+    @apply
+    tw-bg-primary
+    tw-rounded-[20px]
+  }
+
+  @apply
+  sm:tw-border-[2px]
+  tw-border-[1.5px]
+  tw-rounded-[16px]
+  tw-p-[2px]
+  tw-border-primary
+  md:tw-h-[24px]
+  2xs:tw-h-[18px]
+  tw-h-[16px]
+  tw-relative
+  tw-w-[95%]
+  tw-bg-white
+  tw-relative
+}

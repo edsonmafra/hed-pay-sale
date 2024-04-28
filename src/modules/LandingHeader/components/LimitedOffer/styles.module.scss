@@ -1,0 +1,145 @@
+.limitedOfferRoot {
+  & > div {
+    @apply tw-flex
+    tw-flex-col
+    xs:tw-gap-8
+    tw-gap-4
+    xs:tw-justify-start
+    tw-justify-center;
+  }
+
+  & p {
+    @apply xs:tw-text-left
+    tw-text-center;
+  }
+
+  & > div:last-child {
+    @apply tw-justify-center;
+  }
+
+  @media screen and (width <= 890px) {
+    @apply tw-flex-col;
+  }
+
+  @media screen and (width <= 1680px) and (width >= 1440px) {
+    @apply tw-flex-col;
+  }
+
+  @apply md:tw-p-[30px]
+  tw-p-[24px]
+  tw-rounded-[20px]
+  tw-w-full
+  tw-bg-teal-gradient
+  tw-border-2
+  tw-border-primary
+  tw-flex
+  tw-flex-row
+  tw-gap-8;
+}
+
+.limitedOfferHeader {
+  @apply tw-font-bold
+  tw-text-default
+  md:tw-text-[35px]
+  tw-text-[24px]
+  xs:tw-mb-0
+  tw-mb-2;
+}
+
+.warning {
+  & > span {
+    &:first-child {
+      @apply tw-font-bold;
+    }
+    @apply xs:tw-text-2xl
+    2xs:tw-text-xl
+    tw-text-base;
+  }
+
+  @apply tw-text-negative
+  xs:tw-text-md
+  2xs:tw-text-base
+  tw-text-sm
+  tw-font-semi-bold;
+}
+
+.phase {
+  &.activePhase {
+    @apply tw-bg-positive;
+  }
+
+  @media screen and (width <= 741px) {
+    flex: 0 0 30px;
+  }
+
+  flex: 0 0 50px;
+
+  @apply xs:tw-w-[50px]
+  xs:tw-h-[50px]
+  tw-w-[30px]
+  tw-h-[30px]
+  tw-bg-white
+  tw-rounded-[50%]
+  tw-flex
+  tw-items-center
+  tw-justify-center
+  tw-font-semi-bold;
+}
+
+.phasesWrapper {
+  @apply tw-flex
+  lg:tw-justify-between
+  tw-justify-around
+  tw-w-full;
+}
+
+.buttonsWrapper {
+  @apply tw-flex
+  xs:tw-gap-8
+  tw-gap-2
+  tw-justify-center;
+}
+
+.phasesDescription {
+  @apply tw-text-default
+  xs:tw-text-base
+  tw-text-sm
+  tw-font-bold
+  tw-leading-[29px];
+}
+
+.whiteBox {
+  & p {
+    @apply tw-text-positive;
+  }
+
+  & span {
+    @apply tw-text-black
+    tw-font-bold
+    tw-m-[10px];
+  }
+
+  &.button {
+    @apply tw-uppercase
+    tw-font-semi-bold
+    tw-text-default
+    xs:tw-text-xl
+    2xs:tw-text-md
+    tw-text-base;
+  }
+
+  @apply tw-flex
+  tw-flex-col
+  tw-items-center
+  tw-justify-center
+  xs:tw-rounded-[20px]
+  tw-rounded-[16px]
+  tw-bg-white
+  tw-p-[8px]
+  tw-h-[50px]
+  xs:tw-h-[80px]
+  tw-w-[210px]
+  tw-text-grey
+  xs:tw-text-base
+  tw-text-sm;
+}

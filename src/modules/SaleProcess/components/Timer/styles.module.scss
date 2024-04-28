@@ -1,0 +1,53 @@
+.timerRoot {
+  & > span {
+    &:nth-of-type(odd) {
+      font-family: Gilroy, sans-serif;
+      font-weight: 600;
+      line-height: 180px;
+
+      @apply tw-text-white
+      xl:tw-text-[120px]
+      lg:tw-text-[100px]
+      md:tw-text-[120px]
+      sm:tw-text-[80px]
+      2xs:tw-text-[60px]
+      tw-text-[40px]
+      xl:tw-leading-[180px]
+      lg:tw-leading-[150px]
+      md:tw-leading-[180px]
+      sm:tw-leading-[120px]
+      2xs:tw-leading-[90px]
+      tw-leading-[60px]
+      tw-opacity-100;
+    }
+
+    @apply tw-text-grey
+    tw-opacity-50
+    sm:tw-text-lg
+    2xs:tw-text-sm
+    tw-text-xxs
+    tw-font-thin
+    xl:tw-leading-[40px]
+    lg:tw-leading-[30px]
+    md:tw-leading-[40px]
+    sm:tw-leading-[30px]
+    2xs:tw-leading-[20px]
+    tw-leading-[10px];
+  }
+
+  @apply tw-text-white
+  tw-font-thin
+  tw-flex
+  tw-justify-start
+  xl:tw-leading-[180px]
+  lg:tw-leading-[150px]
+  md:tw-leading-[180px]
+  sm:tw-leading-[120px]
+  2xs:tw-leading-[90px]
+  tw-leading-[60px]
+  xl:tw-text-[60px]
+  lg:tw-text-[40px]
+  md:tw-text-[60px]
+  sm:tw-text-[40px]
+  2xs:tw-text-[30px];
+}

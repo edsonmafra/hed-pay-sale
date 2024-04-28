@@ -1,0 +1,28 @@
+.dashboardRoot {
+  @apply lg:tw-py-4
+  lg:tw-px-12
+  tw-py-2
+  tw-px-2;
+}
+
+.buyBoard {
+  & > :first-child {
+    flex-grow: 1;
+  }
+
+  & > :last-child {
+    @apply tw-order-first
+    md:tw-order-none;
+  }
+
+  @apply tw-flex
+  xs:tw-gap-8
+  tw-gap-4
+  tw-flex-col
+  tw-justify-center
+  tw-items-center
+  xs:tw-my-16
+  tw-my-6
+  md:tw-flex-row
+  md:tw-items-start;
+}

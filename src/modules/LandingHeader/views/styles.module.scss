@@ -1,0 +1,52 @@
+.landingHeaderRoot {
+  & > div:first-child {
+    & > *:not(:first-child) {
+      @apply tw-mt-[16px];
+    }
+
+    & > :nth-child(4) {
+      @apply tw-mt-[32px];
+    }
+    @apply lg:tw-w-[45%]
+    tw-w-full;
+  }
+
+  & .seedSale {
+    & > :nth-child(3) {
+      @apply tw-text-negative;
+    }
+  }
+
+  & .privateSale {
+    opacity: 0.4;
+  }
+
+  & .publicSale {
+    opacity: 0.2;
+  }
+
+  & > :last-child {
+    left: 16px;
+    top: 60px;
+
+    @apply lg:tw-absolute
+    tw-order-first
+    tw-static
+    lg:tw-w-[53%]
+    tw-w-full
+    tw-mb-16
+    lg:tw-mb-0;
+  }
+
+  @apply tw-rounded-[50px]
+  md:tw-p-[30px]
+  tw-p-[16px]
+  tw-flex
+  tw-flex-col
+  tw-items-end
+  tw-relative
+  tw-overflow-hidden
+  tw-bg-bg-gradient
+  tw-border-[2px]
+  tw-border-primary;
+}

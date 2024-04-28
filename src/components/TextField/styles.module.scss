@@ -1,0 +1,28 @@
+.textFieldRoot {
+  border-radius: 15px;
+  padding: 10px 20px;
+
+  &.warned {
+    @apply tw-outline-negative;
+  }
+
+  &:focus {
+    &.warned {
+      @apply tw-outline-negative;
+    }
+    @apply tw-outline-2
+    tw-outline-primary;
+  }
+
+  @apply xs:tw-text-base
+  xs:tw-px-[20px]
+  xs:tw-py-[10px]
+  tw-outline-1
+  tw-outline-primary
+  tw-w-full
+  tw-px-[12px]
+  tw-py-[8px]
+  tw-text-sm
+  tw-font-bold
+  hover:tw-outline-2;
+}
